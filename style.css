@@ -1,0 +1,107 @@
+body{
+    background-image: url(/website-test/img-noise-361x370\ \(1\).png)
+}
+img{
+    position: absolute;
+   width: 10%;
+   top: 50%;
+   left: 50%;
+   position: absolute;
+  top: calc(50% - 20px);
+  left: calc(50% - 20px);
+  background-color: #fff;
+  border-radius: 10%;
+  box-shadow:
+    0 0 60px 30px #fff,
+    0 0 100px 60px #f0f,
+    0 0 140px 90px #0ff;
+z-index: -1;
+}
+/* .waitAnimate {
+    animation: rotateTimer 10s ease-in infinite;
+    transform-origin: 66% 66%;
+    z-index: -1;
+  }
+  
+  @keyframes rotateTimer {
+    0% {
+      transform: perspective(100px)rotate(0deg)
+    }
+    16.667% {
+      transform: perspective(100px)rotateX(180deg)rotateY(0);
+    }
+    33.333% {
+      transform: perspective(100px)rotateX(180deg)rotateY(180deg);
+    }
+    50% {
+      transform: perspective(100px)rotateX(0)rotateY(180deg);
+    }
+    66.667% {
+      transform: perspective(100px)rotateX(0)rotateY(0);
+    }
+    100% {
+      transform: perspective(100px)rotateX(0)rotateY(0);
+    }
+  } */
+  h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+  }
+.rainbow-animated{
+    background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow-animation 6s ease-in-out infinite;
+    background-size: 40% 100%;
+    left: 50%;
+    margin-bottom: 0%;
+    box-shadow: white;
+}
+@keyframes rainbow-animation{
+    0%, 100%{
+        background-position: 0 0;
+    }
+    50%{
+        background-position: 100% 0;
+    }
+}
+.rainbow-animated-flip{
+    background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow-animation-flip 6s ease-in-out infinite;
+    background-size: 40% 100%;
+    transform: scaleX(-1);
+    display: inline-block;
+    rotate: 180deg;
+    opacity: 30%;
+    margin: 0%;
+}
+@keyframes rainbow-animation-flip{
+    0%, 100%{
+        background-position: 0 0;
+    }
+    50%{
+        background-position: 100% 0;
+    }
+}
+marquee {
+    height: 100vh;
+  }
+#move{
+    position: relative;
+    z-index: 2;
+}
+.button{
+    width: 300px;
+    height: 100px;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+
+}
